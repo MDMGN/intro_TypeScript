@@ -19,6 +19,7 @@ if( typeof obj === "string"){
 (obj as string).split("_") 
 
 //Tipos de datos compuestos e inferencia de tipos
+import {type Persona} from "./types"
 
 const persona:Persona={
     nombre:"Darren",
@@ -27,12 +28,9 @@ const persona:Persona={
 }
 
 //const frutas:Array<String> = ["fresa","pera","manzana"]
-const frutas: string[]  = ["fresa","pera","manzana"]
+const frutas: string[]  = 
+["fresa","pera","manzana"]
 
 frutas.push("sandia")
 //Tuplas
 const alumnos:[string,string,string,string]=["Asier","Marcial","Mikel","Imanol"]
-
-
-let elementos: string [] | number[] = ["sandia"]
-elementos = [8]

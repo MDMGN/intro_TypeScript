@@ -1,4 +1,4 @@
-type Persona={
+export type Persona={
     nombre: string,
     edad: number,
     saludo: ()=>void
