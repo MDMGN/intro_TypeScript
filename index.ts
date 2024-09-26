@@ -107,12 +107,7 @@ const sumar=(n: any ,n2: any):number | any =>{
 // Union Types && Intersection Types
 
 
-/* type animal ={
-    nombre: string,
-    color : string
-}
- */
-interface animal{
+type animal ={
     nombre: string,
     color : string
 }
@@ -120,6 +115,7 @@ interface animal{
 type caballo ={
     correr: ()=> void
 }
+
 
 /* const simba: animal | caballo ={
     correr: ()=> console.log("Corriendo"),
@@ -144,7 +140,7 @@ const simba: animal & caballo ={
 // POO
 
 class Animal{
-
+    
     constructor(private nombre: string, private color:string){}
 
     getColor():string{

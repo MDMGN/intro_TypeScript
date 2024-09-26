@@ -65,18 +65,18 @@ Escribe una función que use sobrecarga para aceptar tanto dos números como dos
 function combine(n:string, n2:string): string;
 function combine(n:number, n2:number): number;
 
-/* //Implementación de la función
+//Implementación de la función
 function combine(val:any,val2:any):any{
     return val + val2
-} */
+}
 
 console.log(combine("2","2"))
 
 
 
-function combine(val:any,val2:any):any{
+/* function combine(val:any,val2:any):any{
     return isNaN(+val) ?  val + val2 :  (+val) + (+val2)
-}
+} */
 
 console.log(combine("2","5"))
 
