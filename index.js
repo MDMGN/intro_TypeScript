@@ -65,3 +65,5 @@ var sumar = function (n, n2) {
 /* const fn2 = (val: readonly number,val2: readonly number)=>{
     val2 = 5
 } */
+// Union Types && Intersection Types
+//Mappes Types

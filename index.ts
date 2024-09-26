@@ -103,3 +103,9 @@ const sumar=(n: any ,n2: any):number | any =>{
 /* const fn2 = (val: readonly number,val2: readonly number)=>{
     val2 = 5
 } */
+
+// Union Types && Intersection Types
+
+
+
+//Mappes Types
