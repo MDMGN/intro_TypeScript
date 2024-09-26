@@ -25,3 +25,15 @@ Escribe una función que reciba dos números y devuelva su suma. Define correcta
 
 ### Ejercicio 6:
 Escribe una función que use sobrecarga para aceptar tanto dos números como dos strings y devuelva el resultado apropiado (la suma o la concatenación).
+
+
+---
+
+## Módulo 4: Interfaces y Clases
+### Ejercicio 7:
+Define una interfaz `Car` que contenga las propiedades `marca`, `modelo` y un método `acelerar()`. Crea una clase `Deportivo` que implemente esta interfaz.
+
+### Ejercicio 8:
+Crea una clase `Persona` con propiedades privadas `nombre` y `edad`. Incluye métodos para obtener y cambiar estos valores.
+
+---

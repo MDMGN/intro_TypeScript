@@ -59,11 +59,31 @@ function combine(val, val2) {
 var sumar = function (n, n2) {
     return n + n2;
 };
-/* const fn=(n: any ,n2: any): never=>{
-    console.log({n,n2})
+/* const simba: animal | caballo ={
+    correr: ()=> console.log("Corriendo"),
+    color: "negro" // No se puede
 } */
-/* const fn2 = (val: readonly number,val2: readonly number)=>{
-    val2 = 5
-} */
-// Union Types && Intersection Types
+var simba = {
+    correr: function () { return console.log("s"); },
+    color: "negro", // No se puede,
+    nombre: "Simba"
+};
 //Mappes Types
+/* const bambi: Pick<animal,"color">={
+    color: "azul",
+} */
+/* const bambi: Partial<animal> = simba
+ */
+// POO
+var Animal = /** @class */ (function () {
+    function Animal(nombre, color) {
+        this.nombre = nombre;
+        this.color = color;
+    }
+    Animal.prototype.getColor = function () {
+        return this.color;
+    };
+    return Animal;
+}());
+var animal = new Animal("Bambi", "Azul");
+console.log(animal.getColor());

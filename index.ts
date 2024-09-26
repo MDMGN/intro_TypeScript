@@ -107,5 +107,51 @@ const sumar=(n: any ,n2: any):number | any =>{
 // Union Types && Intersection Types
 
 
+/* type animal ={
+    nombre: string,
+    color : string
+}
+ */
+interface animal{
+    nombre: string,
+    color : string
+}
 
+type caballo ={
+    correr: ()=> void
+}
+
+/* const simba: animal | caballo ={
+    correr: ()=> console.log("Corriendo"),
+    color: "negro" // No se puede
+} */
+
+const simba: animal & caballo ={
+    correr: ()=> console.log("s"),
+    color: "negro", // No se puede,
+    nombre: "Simba"
+}
 //Mappes Types
+
+/* const bambi: Pick<animal,"color">={
+    color: "azul",
+} */
+
+/* const bambi: Partial<animal> = simba
+ */
+
+
+// POO
+
+class Animal{
+
+    constructor(private nombre: string, private color:string){}
+
+    getColor():string{
+        return this.color
+    }
+}
+
+const animal=new Animal("Bambi","Azul")
+
+console.log(animal.getColor())
