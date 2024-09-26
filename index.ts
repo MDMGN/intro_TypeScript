@@ -28,9 +28,8 @@ const persona:Persona={
     saludo:()=> console.log("Hola")
 }
 
-//const frutas:Array<String> = ["fresa","pera","manzana"]
-const frutas: string[]  = 
-["fresa","pera","manzana"]
+//const frutas:Array<String> = ["fresa","pera","manzana"] // Tipado con Generics
+const frutas: string[]= ["fresa","pera","manzana"]
 
 frutas.push("sandia")
 //Tuplas
