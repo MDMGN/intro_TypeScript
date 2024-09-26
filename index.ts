@@ -12,11 +12,12 @@ let obj:unknown = "obj"
 
 // Asersiones de tipos
 
-if( typeof obj === "string"){
+// Aserciones con tipos desconocidos
+if( typeof obj === "string"){ //Comporbando si el tipo es un string para acceder al metodo "split"
     obj.split("_")
 }
 
-(obj as string).split("_") 
+(obj as string).split("_")  // Casteando con un alias para convertir el dato a string y acceder al metodo "split"
 
 //Tipos de datos compuestos e inferencia de tipos
 import {type Persona} from "./types"
