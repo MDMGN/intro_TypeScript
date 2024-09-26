@@ -31,6 +31,5 @@ const persona:Persona={
 //const frutas:Array<String> = ["fresa","pera","manzana"] // Tipado con Generics
 const frutas: string[]= ["fresa","pera","manzana"]
 
-frutas.push("sandia")
 //Tuplas
 const alumnos:[string,string,string,string]=["Asier","Marcial","Mikel","Imanol"]
