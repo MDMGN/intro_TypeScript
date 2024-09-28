@@ -127,15 +127,20 @@ const simba: animal & caballo ={
     color: "negro", // No se puede,
     nombre: "Simba"
 }
-//Mappes Types
+//Utils Type
 
-/* const bambi: Pick<animal,"color">={
+const bambi: Pick<animal,"color">={
     color: "azul",
-} */
+}
 
 /* const bambi: Partial<animal> = simba
  */
 
+//Record: Primer valor para tipo en las claves y el segundo para el tipado en sus valores
+/* const bambi: Record<keyof animal,string>={
+    color: "negro",
+    nombre: "bambi"
+} */
 
 // POO
 
@@ -151,3 +156,7 @@ class Animal{
 const animal=new Animal("Bambi","Azul")
 
 console.log(animal.getColor())
+
+
+
+//Mappes Types
