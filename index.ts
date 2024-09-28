@@ -159,4 +159,4 @@ console.log(animal.getColor())
 
 
 
-//Mappes Types
+//Mappeds Types
