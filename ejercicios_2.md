@@ -75,3 +75,49 @@ const employee2: Employee =  // Implemetación
 console.log(employee1);
 console.log(employee2);
 ```
+
+
+### Ejercicio 4: Mapped Types
+
+Usa un **Mapped Type** para transformar todas las propiedades de un tipo en propiedades opcionales, o cambiar su tipo a booleanos.
+
+```typescript
+type User = {
+    name: string;
+    email: string;
+    active: boolean;
+};
+
+// Cambiar todas las propiedades a opcionales
+type OptionalUser = {
+    ////Implementación
+};
+
+// Cambiar todas las propiedades a booleanos
+type BooleanUser = {
+    //Implementación
+};
+
+const optionalUser: OptionalUser = {
+    name: "Alice"
+};
+
+const booleanUser: BooleanUser = {
+    name: true,
+    email: false,
+    active: true
+};
+
+console.log(optionalUser);
+console.log(booleanUser);
+```
+
+### Ejercicio 5: Type Assertions
+
+Corrige el tipo de una variable usando **type assertions** (aserciones de tipo).
+
+```typescript
+const unknownValue: unknown = "Hello, TypeScript";
+
+// Aserción de tipo
+const strValue = unknownValue
