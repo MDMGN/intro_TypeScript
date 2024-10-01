@@ -153,10 +153,28 @@ class Animal{
     }
 }
 
-const animal=new Animal("Bambi","Azul")
+//const animal=new Animal("Bambi","Azul")
 
-console.log(animal.getColor())
+//console.log(animal.getColor())
 
 
 
 //Mappeds Types
+
+
+
+
+type TypeReadOnly<Type>={
+     readonly [Key in keyof Type]? : Type[Key]
+}
+
+const dog:TypeReadOnly<animal>={
+    color:"negro"
+}
+
+
+const caballo2:TypeReadOnly<caballo>={
+    correr() {
+        console.log("Corriendo")
+    },
+}
